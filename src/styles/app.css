@@ -40,7 +40,7 @@
 }
 
 :root {
-    --font-accent: Georgia, 'DM Serif Display', serif;
+    --font-accent: Larksen, serif, 'DM Serif Display';
 
     /* Font sizes */
     --s-heading: 96px;
@@ -77,6 +77,10 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {

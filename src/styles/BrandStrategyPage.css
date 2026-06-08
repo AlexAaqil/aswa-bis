@@ -5,7 +5,7 @@
         @apply mb-4;
 
         .container-fluid {
-            @apply min-h-screen p-16 border border-border rounded-lg;
+            @apply min-h-[85dvh] p-16 border border-border rounded-lg;
 
             .header {
                 .title {
@@ -14,8 +14,6 @@
             }
 
             .content {
-                @apply w-[80%];
-
                 .content-title {
                     @apply text-accent-foreground text-sm font-medium;
 
@@ -60,37 +58,35 @@
                     }
                 }
 
-                .audience-wrapper {
-                    @apply grid grid-cols-2 gap-8 mt-8;
+                .audience-card {
+                    @apply grid grid-cols-12 gap-12;
 
-                    .audience-card {
-                        @apply border border-border rounded-lg p-4;
+                    .image {
+                        @apply col-span-4 h-full w-full rounded-lg flex items-center justify-center border border-border overflow-hidden mb-8;
 
-                        .image {
-                            @apply h-25 w-25 rounded-full flex items-center justify-center border border-border overflow-hidden mb-8;
+                        img {
+                            @apply object-cover h-full w-full;
+                        }
+                    }
 
-                            img {
-                                @apply object-cover h-full w-full;
-                            }
+                    .content {
+                        @apply col-span-8;
+
+                        .title {
+                            @apply font-semibold text-2xl mb-2;
                         }
 
-                        .content {
-                            .title {
-                                @apply font-semibold text-lg mb-2;
-                            }
+                        p {
+                            @apply text-sm;
+                        }
 
-                            p {
-                                @apply text-sm;
-                            }
+                        .description,
+                        .subtitle {
+                            @apply text-accent-foreground text-xs font-medium;
+                        }
 
-                            .description,
-                            .subtitle {
-                                @apply text-accent-foreground text-xs font-medium;
-                            }
-
-                            .subtitle {
-                                @apply mt-4 uppercase;
-                            }
+                        .subtitle {
+                            @apply mt-4 uppercase;
                         }
                     }
                 }
@@ -105,7 +101,7 @@
 
             .header {
                 .title {
-                    @apply text-s-heading font-bold mb-8 uppercase tracking-wider text-white dark:text-accent-foreground;
+                    @apply text-s-heading mb-8 uppercase tracking-wider text-white dark:text-accent-foreground;
                     line-height: 1;
                 }
 
