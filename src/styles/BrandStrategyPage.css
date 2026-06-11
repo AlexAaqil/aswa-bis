@@ -42,17 +42,17 @@
                     }
                 }
 
-                .core-values {
+                .grid-ol {
                     @apply list-none grid gap-4 mt-4;
 
                     li {
                         @apply ml-0 border border-border p-4 rounded-lg grid gap-1;
 
-                        .value {
+                        .span:first-of-type {
                             @apply font-medium text-lg;
                         }
 
-                        .description {
+                        .span:last-of-type {
                             @apply text-sm;
                         }
                     }
@@ -94,7 +94,6 @@
         }
     }
 
-
     .MainSlide {
         .container-fluid {
             @apply flex flex-col gap-8 bg-accent text-white;
@@ -123,6 +122,34 @@
 
                 .number {
                     @apply justify-self-end text-accent-foreground text-5xl font-bold;
+                }
+            }
+        }
+    }
+
+    .CompetitorProfiles {
+        .container-fluid {
+            .content {
+                @apply grid grid-cols-12 gap-12;
+
+                .images {
+                    @apply col-span-4 grid gap-8 items-center mb-8;
+
+                    .logo {
+                        @apply h-16;
+                    }
+
+                    .other-images {
+                        @apply h-100 grid grid-cols-2 items-center gap-8 rounded-lg overflow-hidden;
+
+                        img {
+                            @apply object-contain h-full rounded-lg;
+                        }
+                    }
+                }
+
+                .text {
+                    @apply col-span-8;
                 }
             }
         }

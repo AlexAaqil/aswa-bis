@@ -48,7 +48,7 @@
     --s-body: 16px;
     --s-caption: 12px;
 
-    --background: #FAF9F5;
+    --background: #F0EBE0;
 
     --foreground: #171918;
     --muted-foreground: #4e5350;
@@ -56,7 +56,7 @@
     /* --accent: #5200FF; */
     --accent: #6F00FF;
     --accent-foreground: #C8973A;
-    --border: hsl(0 0% 92.8%);
+    --border: hsl(0 0% 14.9%);
 }
 
 .dark {
@@ -107,6 +107,7 @@ body {
 }
 
 @import './Navbar';
+@import './Tables';
 
 @import './Homepage';
 @import './BrandStrategyPage';

@@ -1,0 +1,25 @@
+.table {
+    @apply w-full;
+
+    thead {
+        @apply font-bold;
+
+        tr {
+            @apply border-b border-border;
+
+            th {
+                @apply text-left py-4;
+            }
+        }
+    }
+
+    tbody {
+        tr {
+            @apply border-b border-border;
+
+            td {
+                @apply py-2;
+            }
+        }
+    }
+}
