@@ -1,21 +1,9 @@
 .BrandStrategyPage {
-    @apply py-4;
-
     .Slide {
-        @apply mb-4;
-
         .container-fluid {
-            @apply min-h-[85dvh] p-16 border border-border rounded-lg;
-
-            .header {
-                .title {
-                    @apply text-s-subheading mb-8 text-accent-foreground font-semibold;
-                }
-            }
-
             .content {
                 .content-title {
-                    @apply text-accent-foreground text-sm font-medium;
+                    @apply text-sm font-medium;
 
                     &:not(:first-of-type) {
                         @apply mt-8;
@@ -39,22 +27,6 @@
 
                     .source {
                         @apply text-xs text-muted-foreground;
-                    }
-                }
-
-                .grid-ol {
-                    @apply list-none grid gap-4 mt-4;
-
-                    li {
-                        @apply ml-0 border border-border p-4 rounded-lg grid gap-1;
-
-                        .span:first-of-type {
-                            @apply font-medium text-lg;
-                        }
-
-                        .span:last-of-type {
-                            @apply text-sm;
-                        }
                     }
                 }
 
@@ -89,39 +61,6 @@
                             @apply mt-4 uppercase;
                         }
                     }
-                }
-            }
-        }
-    }
-
-    .MainSlide {
-        .container-fluid {
-            @apply flex flex-col gap-8 bg-accent text-white;
-
-            .header {
-                .title {
-                    @apply text-s-heading mb-8 uppercase tracking-wider text-white dark:text-accent-foreground;
-                    line-height: 1;
-                }
-
-                .description {
-                    @apply text-s-subheading;
-                }
-            }
-
-            .footer {
-                @apply mt-auto flex gap-24;
-
-                .contact {
-                    @apply text-s-caption;
-                }
-            }
-
-            .slide-number {
-                @apply mt-auto inline-grid;
-
-                .number {
-                    @apply justify-self-end text-accent-foreground text-5xl font-bold;
                 }
             }
         }

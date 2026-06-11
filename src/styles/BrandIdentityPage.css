@@ -1,0 +1,143 @@
+.BrandIdentityPage {
+    .ColorSystem {
+        .container-fluid {
+            .content {
+                .color-palette-wrapper {
+                    @apply flex gap-24 mt-4;
+
+                    .color-palette {
+                        .color {
+                            @apply h-30 w-50 rounded-xl border border-border;
+                        }
+
+                        .info {
+                            @apply p-2;
+
+                            .name {
+                                @apply font-semibold text-lg;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .TypographiesSlide {
+        .container-fluid {
+            .content {
+                .typographies {
+                    @apply grid grid-cols-2 gap-8;
+
+                    .typography {
+                        @apply bg-muted-background rounded-xl p-4;
+
+                        .header {
+                            @apply py-4 mb-4 border-b border-border;
+
+                            .heading {
+                                @apply text-6xl font-bold;
+                            }
+
+                            .sub-heading {
+                                @apply text-muted-foreground font-semibold;
+                            }
+                        }
+
+                        .description {
+                            @apply text-muted-foreground;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .TypeScalesSlide {
+        .container-fluid {
+            .content {
+                .type-scales {
+                    .type-scale {
+                        @apply grid grid-cols-12 items-center border-b border-border h-25;
+
+                        .description {
+                            @apply col-span-3 text-sm text-muted-foreground;
+                        }
+
+                        .use-case {
+                            @apply col-span-6;
+                        }
+
+                        .size {
+                            @apply col-span-3 text-right text-sm text-muted-foreground;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .UIComponentsSlide {
+        .container-fluid {
+            .content {
+                @apply grid grid-cols-2 gap-8;
+
+                .description {
+                    @apply mt-8 text-sm;
+                }
+
+                .buttons-wrapper {
+                    .buttons {
+                        @apply grid grid-cols-2 gap-4;
+                    
+                        button {
+                            @apply py-2 px-2 uppercase font-bold tracking-[0.06em];
+
+                            &:first-of-type {
+                                @apply bg-accent rounded-sm;
+                            }
+
+                            &:nth-of-type(2) {
+                                @apply bg-transparent border border-border rounded-sm;
+                            }
+
+                            &:nth-of-type(3) {
+                                @apply bg-transparent text-accent border-b border-accent;
+                            }
+                        }
+                    }
+                }
+
+                .badge-pills {
+                    .badges {
+                        span {
+                            @apply border border-border;
+                        }
+                    }
+                }
+
+                .form-elements {
+                    form {
+                        .inputs-group {
+                            @apply mb-4;
+
+                            label {
+                                @apply text-muted-foreground;
+                            }
+
+                            input {
+                                @apply border border-border w-full py-1 px-4 rounded-sm;
+                            }
+                        }
+                    }
+                }
+
+                .card-elements {
+                    .card {
+                        @apply bg-accent p-4 rounded-lg;
+                    }
+                }
+            }
+        }
+    }
+}
